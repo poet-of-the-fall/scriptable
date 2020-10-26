@@ -2,11 +2,11 @@
 
 Scripts I made for iOS app [Scriptable](https://scriptable.app)
 
-## Netatmo
+## [Netatmo](https://github.com/poet-of-the-fall/scriptable/blob/main/netatmo.js)
 
-Go to [Netatmo Dev Portal](https://dev.netatmo.com) and create a [new app](https://dev.netatmo.com/apps/createanapp).You will need the client ID and client secret.
+Go to [Netatmo Dev Portal](https://dev.netatmo.com) and create a [new app](https://dev.netatmo.com/apps/createanapp). You will need the client ID and client secret.
 
-Fill in lines 3 to 6 in the code with your data:
+Fill in lines 3 to 6 in the [code](https://github.com/poet-of-the-fall/scriptable/blob/main/netatmo.js) with your data:
 
 ```javascript
 const username = 'your@ma.il';
