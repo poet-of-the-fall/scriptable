@@ -38,8 +38,8 @@ async function createWidget(items) {
 
    // Outside module values
    const outside = getOutsideModule(data)
-   const on = list.addText(outside.Temperature + "°   " + outside.module_name)
-   const ov = list.addText("⇩ " + outside.min_temp + '°   ⇧ ' + outside.max_temp + '°   ' + outside.Humidity + "%")
+   const on = list.addText(outside.Temperature + "°  " + outside.module_name)
+   const ov = list.addText("⇩ " + outside.min_temp + '°   ⇧ ' + outside.max_temp + '°   💦' + outside.Humidity + "%")
    on.font = Font.boldSystemFont(11)
    ov.font = Font.mediumSystemFont(9)
 
@@ -47,8 +47,8 @@ async function createWidget(items) {
 
    // Main module values
    const main = getMainModule(data)
-   const mn = list.addText(main.Temperature + "°   " + main.module_name)
-   const mv = list.addText(main.Temperature + "°   " + main.Humidity + "%   " + main.CO2 + "ppm")
+   const mn = list.addText(main.Temperature + "°  " + main.module_name)
+   const mv = list.addText("💨" + main.CO2 + "ppm   💦" + main.Humidity + "%")
    mn.font = Font.boldSystemFont(11)
    mv.font = Font.mediumSystemFont(9)
 
@@ -59,8 +59,8 @@ async function createWidget(items) {
    // Inside modules values
    const inside = getInsideModules(data)
    for (m of inside) {
-     const n = list.addText(m.Temperature + "°   " + m.module_name)
-     const v = list.addText(m.Temperature + "°   " + m.Humidity + "%   " + m.CO2 + "ppm")
+     const n = list.addText(m.Temperature + "°  " + m.module_name)
+     const v = list.addText("💨" + m.CO2 + "ppm   💦" + m.Humidity + "%")
      n.font = Font.boldSystemFont(11)
      v.font = Font.mediumSystemFont(9)
 
